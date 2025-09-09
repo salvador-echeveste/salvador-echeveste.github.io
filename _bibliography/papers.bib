@@ -6,7 +6,7 @@
   volume={10},
   pages={264},
   abstract={For artificial legs that are used in legged robots, exoskeletons, and prostheses, it suffices to achieve velocity regulation at a few key instants of swing rather than tight trajectory tracking. Here, we advertise an event-based, intermittent, discrete controller to enable set-point regulation for problems that are traditionally posed as trajectory following. We measure the system state at prior-chosen instants known as events (e.g., vertically downward position), and we turn on the controller intermittently based on the regulation errors at the set point. The controller is truly discrete, as these measurements and controls occur at the time scale of the system to be controlled. To enable set-point regulation in the presence of uncertainty, we use the errors to tune the model parameters. We demonstrate the method in the velocity control of an artificial leg, a simple pendulum, with up to 50% mass uncertainty. Starting with a 100% regulation error, we achieve velocity regulation of up to 10% in about five swings with only one measurement per swing.},
-  pdf={Event-Based, Intermittent, Discrete Adaptive Control for Speed Regulation of Artificial Legs.pdf},
+  pdf={Echeveste(2021) Event_bsed_adaptive control.pdf},
   bibtex_show={true}
 }
 
@@ -16,7 +16,7 @@
   booktitle={Proceedings of the ASME 2023 IDETC/CIE},
   year={2023},
   abstract={Despite tremendous potential, predictive simulations for exoskeleton control tend to overpromise the performance of assistance on walking. The transition from simulation to hardware faces several hurdles such as difficulty representing human–machine interface, an overreliance on intuition, and a lack of exploration in assistive strategies. This work presents a simulation-to-hardware strategy that creates optimized assistance profiles to implement on a hip exoskeleton to assist leg swinging as an intermediary step to improve control strategies for walking. By simplifying the activity we were able to observe a smaller disconnect between simulation and hardware. In addition, the comparison provided insight on the differences between the effectiveness of assistance on frequency of the activity and type of work.},
-  pdf={Optimal Swing Assistance Using a Hip Exoskeleton: Comparing Simulations with Hardware Implementation.pdf},
+  pdf={Echeveste(2023)Optimal swing assistance sim vs hardware.pdf},
   bibtex_show={true}
 }
 
@@ -25,7 +25,7 @@
   author={Echeveste, Salvador and Mondal, Md Safwan and Ramasay, Subramanian and Bhounsule, Pranav A.},
   year={2024},
   abstract={Hip exoskeletons offer significant potential for enhancing human movement, especially for those with mobility impairments. However, optimizing their performance typically involves lengthy discrete and continuous optimization methods. To address this, we propose a novel approach using machine learning to predict controller parameter classes, aiming to improve the tuning process. Our method relies on subject-specific anthropometric data to predict optimal controller parameters for hip exoskeletons. Through a machine learning framework, we develop predictive models to determine the most effective parameter settings tailored to individual users. By employing feature engineering, data synthesis techniques, and model training, we enhance the initialization of Bayesian Human-in-the-loop (HIL) optimization. Results indicate that our machine learning models can predict control parameter classes with 75% accuracy, leading to a 9.98% improvement in optimized exoskeleton performance for users.},
-  pdf={Enhancing Hip Exoskeleton Tuning Performance with Machine Learning: An Anthropometric Data-Driven Approach.pdf},
+  pdf={Echeveste(2024)Enhancing_tuning_via_antrhometric_data.pdf},
   bibtex_show={true}
 }
 
@@ -37,7 +37,7 @@
   volume={5},
   pages={21},
   abstract={Background/Objectives: The manual tuning of exoskeleton control parameters is tedious and often ineffective for adapting to individual users. Human-in-the-loop (HIL) optimization offers an automated approach, but existing methods typically rely on metabolic cost, which requires prolonged data collection times of at least 60 s. Surface electromyography (EMG) signals, as an alternative, enable faster optimization with reduced data acquisition times. Methods: This study develops a rapid EMG-based HIL Bayesian optimization framework to tune hip exoskeleton controllers for assisting free leg swinging. Eight participants performed leg swinging at two frequencies with assistance from a hip exoskeleton; EMG signals from four sensors were processed into cost functions and Bayesian optimization tuned four controller parameters using expected improvement. Results: Optimization converged within an average of 142 s (±24 s). The controller yielded muscle activity reductions of 16.1% (p < 0.001) compared to no device, 21.7% (p < 0.001) versus zero torque, and 15.1% (p < 0.001) versus general control, with perceived effort reductions on the Borg scale. Conclusions: EMG-based HIL optimization significantly enhances controller tuning speed and effectiveness, demonstrating potential for scalable and user-specific exoskeleton applications.},
-  pdf={Electromyography-Based Human-in-the-Loop Bayesian Optimization to Assist Free Leg Swinging.pdf},
+  pdf={Echeveste(2025)Electromyography-Based Human-in-the-Loop Bayesian.pdf},
   bibtex_show={true}
 }
 
@@ -47,7 +47,7 @@
   booktitle={Proceedings of the ASME IDETC/CIE 2025},
   year={2025},
   abstract={Assistive exoskeletons offer potential benefits for mobility during dynamic activities such as squatting, yet tuning their controllers poses a significant challenge. Conventional methods based on manual adjustments or metabolic cost measurements are slow. We propose an EMG-based human-in-the-loop (HIL) optimization framework that integrates continuous EMG feedback into a Bayesian optimization algorithm to efficiently adjust the control parameters of a portable exoskeleton. In this pilot study (n=4), our approach achieves a 21.3% reduction in metabolic cost compared to a no-device condition and a 22.5% reduction relative to an unpowered exoskeleton, with the tuning process taking only 4 minutes and 40 seconds. Moreover, the method reduces muscle activation by up to 21.4% and improves perceived effort ratings.},
-  pdf={Tuning Squatting Controllers for a Hip Exoskeleton Using EMG-Based Bayesian Optimization.pdf},
+  pdf={Echeveste(2025)Tuning_squatting_controllers_for_a_hip_exoskeleton_using_EMG_based_bayesian_optimization.pdf},
   bibtex_show={true}
 }
 @article{echeveste2025_emg_hankel_mobo,
@@ -55,6 +55,6 @@
   author={Echeveste, Salvador and Yang, Chunming and Bhounsule, Pranav A.},
   year={2025},
   abstract={Electromyography (EMG) signals are essential for neuromuscular diagnosis and assistive device control but suffer from noise contamination that obscures clinically important transient features. We present an interpretable, automated framework that enhances EMG quality by integrating low rank Hankel matrix reconstruction with Bayesian regularized Koopman regression and optimized smoothing, all tuned through multi-objective Bayesian optimization (MOBO). Raw EMG traces are embedded in a time delay Hankel matrix and decomposed via truncated singular value decomposition (SVD) to isolate underlying dynamics. A ridge regularized Bayesian regression learns a predictive transition operator, whose forecasts are optimally combined with the reconstructed signal. A windowed Makima median smoother provides final refinement. Key hyperparameters including embedding dimension, SVD rank, regularization variances, and fusion weight are selected to simultaneously maximize signal to noise ratio (SNR) and structural fidelity using Gaussian process surrogates and an expected hypervolume improvement (EHVI) criterion. When evaluated on walking and squatting EMG data from ten healthy adults across four muscle groups, our method achieves a 108.7% increase in a squared geometric mean (SGM) metric (p = 0.0282) and an 11.4% gain in normalized joint fidelity (p = 0.0011), while decoupling noise reduction from signal preservation (Pearson r ≈ 0). These results establish a powerful, generalizable approach for real time clinical and rehabilitation applications.},
-  pdf={EMG Signal Enhancement via Multi-Objective Optimization of Hankel-Based Bayesian Learning.pdf},
+  pdf={Echeveste(2025)EMG_Signal_enhancement_via_Hankelbased_bayesian_learning.pdf},
   bibtex_show={true}
 }

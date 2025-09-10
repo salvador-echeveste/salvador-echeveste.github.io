@@ -4,7 +4,6 @@
     "label": "Robotics/Mechatronics Lecturer | ML Research Engineer",
     "image": "",
     "email": "sechev6@uic.edu",
-    "phone": "(210) 845-8799",
     "url": "",
     "summary": "PhD researcher with 5+ years developing probabilistic ML models for noisy time-series data. Expert in Bayesian optimization, uncertainty quantification, and signal processing with proven ability to extract signals from high-frequency (1.7kHz) streams and 4GB+ datasets.",
     "location": {
@@ -30,7 +29,7 @@
   "work": [
     {
       "name": "University of Illinois at Chicago - Robotics & Motion Lab",
-      "position": "Machine Learning Research Engineer",
+      "position": "Graduate Research Assistant",
       "url": "",
       "startDate": "2019-08-01",
       "endDate": "2025-08-01",

@@ -1,200 +1,334 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Salvador Echeveste",
+    "label": "Robotics/Mechatronics Lecturer | ML Research Engineer",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "sechev6@uic.edu",
+    "phone": "(210) 845-8799",
+    "url": "",
+    "summary": "PhD researcher with 5+ years developing probabilistic ML models for noisy time-series data. Expert in Bayesian optimization, uncertainty quantification, and signal processing with proven ability to extract signals from high-frequency (1.7kHz) streams and 4GB+ datasets.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
+      "address": "1525 S Sangamon",
+      "postalCode": "60608",
+      "city": "Chicago",
       "countryCode": "US",
-      "region": "California"
+      "region": "Illinois"
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "network": "LinkedIn",
+        "username": "salvador-echeveste",
+        "url": "https://www.linkedin.com/in/salvador-echeveste-917a33368"
+      },
+      {
+        "network": "GitHub",
+        "username": "salvador-echeveste",
+        "url": "https://github.com/salvador-echeveste"
       }
     ]
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
+      "name": "University of Illinois at Chicago - Robotics & Motion Lab",
+      "position": "Machine Learning Research Engineer",
+      "url": "",
+      "startDate": "2019-08-01",
+      "endDate": "2025-08-01",
+      "summary": "Leading research in Bayesian optimization, EMG time-series modeling, and control systems for hip exoskeleton applications",
+      "highlights": [
+        "Bayesian optimization for controller tuning (hip exoskeleton system): heteroscedastic Gaussian Processes (ARD Matérn 5/2), EHVI, and Pareto analysis for multi-objective formulations with input-dependent noise",
+        "EMG time-series modeling: Hankel decomposition, truncated SVD, and Bayesian-regularized Koopman regression; real-time EMG processing with sub-millisecond latency",
+        "Predictive modeling: elastic net feature selection; Akima interpolation for data synthesis; classification of optimal controller classes from anthropometrics",
+        "Control systems: adaptive impedance control, Bézier stiffness profiles, finite state machines; real-time deployment at 100 Hz on hip exoskeleton hardware",
+        "Statistics & data: bootstrap confidence intervals, hypothesis testing, ICC reliability; SQL-based pipeline across a 4 GB/360-trial dataset; EMG-based cost function development"
+      ]
     }
   ],
-  "volunteer": [
-    {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
-    }
-  ],
+  "volunteer": [],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "10",
-      "courses": ["Theory of Relativity"]
+      "institution": "University of Illinois at Chicago",
+      "location": "Chicago, IL",
+      "url": "https://www.uic.edu/",
+      "area": "Mechanical Engineering (ML/Signal Processing/Controls)",
+      "studyType": "Ph.D.",
+      "startDate": "2019-08-01",
+      "endDate": "2025-08-01",
+      "score": "4.0",
+      "courses": []
+    },
+    {
+      "institution": "University of Texas at San Antonio",
+      "location": "San Antonio, TX",
+      "url": "https://www.utsa.edu/",
+      "area": "Mechanical Engineering",
+      "studyType": "Master of Science",
+      "startDate": "2017-08-01",
+      "endDate": "2019-05-01",
+      "score": "3.73",
+      "courses": ["Transfer, No Degree"]
+    },
+    {
+      "institution": "Texas A&M University",
+      "location": "College Station, TX",
+      "url": "https://www.tamu.edu/",
+      "area": "Manufacturing & Mechanical Engineering",
+      "studyType": "Bachelor of Science",
+      "startDate": "2012-08-01",
+      "endDate": "2017-05-01",
+      "score": "3.35",
+      "courses": []
     }
   ],
   "awards": [
     {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
+      "title": "College of Engineering Graduate Student Award for Teaching Assistance Excellence",
+      "date": "2023-01-01",
+      "awarder": "University of Illinois at Chicago",
+      "url": "",
+      "summary": "Recognized for outstanding performance as a teaching assistant"
+    },
+    {
+      "title": "Session Chair",
+      "date": "2023-08-01",
+      "awarder": "ASME IDETC 2023",
+      "url": "",
+      "summary": "Session Chair for '06-01' at the 47th Mechanisms and Robotics Conference, Boston, MA"
     }
   ],
   "certificates": [
     {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-location-dot"
+      "name": "Certificate in the Foundations of College Instruction",
+      "date": "2025-01-01",
+      "issuer": "University of Illinois at Chicago",
+      "url": "",
+      "icon": "fa-solid fa-certificate"
     },
     {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-tag"
-    },
-    {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-envelope"
-    },
-    {
-      "name": "Quantum Cryptography",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-hashtag"
-    },
-    {
-      "name": "Quantum Communication",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-calendar"
-    },
-    {
-      "name": "Quantum Teleportation",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-clipboard-check"
+      "name": "Certificate of Leadership",
+      "date": "2016-05-01",
+      "issuer": "Texas A&M University",
+      "url": "",
+      "icon": "fa-solid fa-award"
     }
   ],
   "publications": [
     {
-      "name": "Zur Elektrody/namik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
+      "name": "Electromyography-Based Human-in-the-Loop Bayesian Optimization to Assist Free Leg Swinging",
+      "publisher": "MDPI Biomechanics",
+      "releaseDate": "2025-01-01",
+      "url": "",
+      "summary": "Journal article presenting EMG-based optimization approach for leg swinging assistance. Volume 5, Issue 2, Page 21."
     },
     {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
+      "name": "EMG Signal Enhancement via Multi-Objective Optimization of Hankel-Based Bayesian Learning",
+      "publisher": "Control Engineering Practice",
+      "releaseDate": "2025-01-01",
+      "url": "",
+      "summary": "Accepted journal article on signal enhancement techniques using multi-objective optimization."
     },
     {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
+      "name": "Enhancing Hip Exoskeleton Tuning Performance with Machine Learning: An Anthropometric Data-Driven Approach",
+      "publisher": "Proceedings of MECC",
+      "releaseDate": "2024-01-01",
+      "url": "",
+      "summary": "Conference paper on using machine learning with anthropometric data to improve exoskeleton tuning."
+    },
+    {
+      "name": "Event-Based, Intermittent, Discrete Adaptive Control for Speed Regulation of Artificial Legs",
+      "publisher": "Actuators",
+      "releaseDate": "2021-01-01",
+      "url": "",
+      "summary": "Journal article on adaptive control methods for artificial leg systems. DOI: 10.3390"
+    },
+    {
+      "name": "Optimal Swing Assistance Using a Hip Exoskeleton: Comparing Simulations With Hardware Implementation",
+      "publisher": "ASME",
+      "releaseDate": "2023-01-01",
+      "url": "",
+      "summary": "Conference paper comparing simulation and hardware results for hip exoskeleton swing assistance. DOI: 10.1115"
     }
   ],
   "skills": [
     {
-      "name": "Physics",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
+      "name": "Programming Languages",
+      "level": "Expert",
+      "icon": "fa-solid fa-code",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "Python (5+ years)",
+        "MATLAB",
+        "C/C++",
+        "SQL",
+        "Bash"
+      ]
+    },
+    {
+      "name": "Machine Learning & Modeling",
+      "level": "Expert",
+      "icon": "fa-solid fa-brain",
+      "keywords": [
+        "Gaussian Processes",
+        "Time-series analysis",
+        "Predictive modeling",
+        "Classification",
+        "Uncertainty quantification"
+      ]
+    },
+    {
+      "name": "Signal Processing",
+      "level": "Expert",
+      "icon": "fa-solid fa-wave-square",
+      "keywords": [
+        "Spectral decomposition",
+        "Kalman filtering",
+        "Wavelet analysis",
+        "Real-time processing",
+        "Feature extraction"
+      ]
+    },
+    {
+      "name": "Optimization",
+      "level": "Expert",
+      "icon": "fa-solid fa-chart-line",
+      "keywords": [
+        "Bayesian optimization",
+        "Multi-objective optimization",
+        "Constrained optimization",
+        "Hyperparameter tuning"
+      ]
+    },
+    {
+      "name": "Mechanical Design",
+      "level": "Advanced",
+      "icon": "fa-solid fa-cogs",
+      "keywords": [
+        "SolidWorks",
+        "Autodesk Inventor",
+        "ANSYS",
+        "3D Printing",
+        "Topology Optimization"
+      ]
+    },
+    {
+      "name": "Teaching",
+      "level": "Expert",
+      "icon": "fa-solid fa-chalkboard-teacher",
+      "keywords": [
+        "Evidence-based backwards course design",
+        "Active learning strategies",
+        "Metacognitive approaches",
+        "Project-based learning",
+        "Inclusive teaching practices"
       ]
     }
   ],
   "languages": [
     {
-      "language": "German",
+      "language": "English",
       "fluency": "Native speaker",
       "icon": ""
     },
     {
-      "language": "English",
-      "fluency": "Fluent",
+      "language": "Spanish",
+      "fluency": "Native speaker",
       "icon": ""
     }
   ],
   "interests": [
     {
-      "name": "Physics",
-      "icon": "fa-solid fa-tag",
+      "name": "Robotics & Control",
+      "icon": "fa-solid fa-robot",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "Exoskeleton Design",
+        "Human-Robot Interaction",
+        "Adaptive Control",
+        "Biomechanics"
+      ]
+    },
+    {
+      "name": "Machine Learning Applications",
+      "icon": "fa-solid fa-microchip",
+      "keywords": [
+        "Bayesian Methods",
+        "Real-time Processing",
+        "Signal Analysis",
+        "Optimization"
       ]
     }
   ],
   "references": [
     {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+      "name": "Dr. Pranav A. Bhounsule",
+      "icon": "fa-solid fa-user",
+      "reference": "Assistant Professor, Department of Mechanical & Industrial Engineering, University of Illinois at Chicago. Email: pranav@uic.edu"
     },
     {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+      "name": "Dr. Carmen Lilley",
+      "icon": "fa-solid fa-user",
+      "reference": "Associate Professor, Department of Mechanical & Industrial Engineering, University of Illinois at Chicago. Email: clilley@uic.edu"
+    },
+    {
+      "name": "Dr. Jamison Szwalek",
+      "icon": "fa-solid fa-user",
+      "reference": "Clinical Associate Professor, Department of Mechanical & Industrial Engineering, University of Illinois at Chicago. Email: jszwalek@uic.edu"
     }
   ],
   "projects": [
     {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
+      "name": "Heteroscedastic Multi-Objective Optimization Platform (Hip Exoskeleton)",
+      "summary": "Developed heteroscedastic Gaussian Processes with ARD Matérn 5/2 kernel and EHVI for Pareto exploration in multi-objective Bayesian optimization with input-dependent noise",
+      "highlights": [
+        "23-31% RMSE reduction vs homoscedastic baselines",
+        "10× faster convergence (12 min vs 2-4 hrs)",
+        "18.2% EMG and 17.2% metabolic cost reductions in 11-subject studies"
+      ],
+      "startDate": "2024-01-01",
+      "endDate": "2025-01-01",
+      "url": ""
+    },
+    {
+      "name": "Real-Time EMG Signal Enhancement",
+      "summary": "Designed adaptive filtering algorithms using Hankel trajectory reconstruction with truncated SVD and Bayesian-regularized Koopman regression",
+      "highlights": [
+        "+108.7% combined metric improvement",
+        "Decoupled noise from signal (r≈0.011 vs -0.64 baseline)",
+        "Sub-millisecond latency for real-time processing"
+      ],
+      "startDate": "2024-01-01",
+      "endDate": "2025-01-01",
+      "url": ""
+    },
+    {
+      "name": "Anthropometric ML for Controller Prediction",
+      "summary": "Developed machine learning models using elastic net feature selection and Akima interpolation for optimal controller class prediction from anthropometric features",
+      "highlights": [
+        "75% accuracy in controller prediction",
+        "Reduced Bayesian HIL optimization time by 26.5%",
+        "Improved controller performance by 9.98% on average"
+      ],
+      "startDate": "2024-01-01",
+      "endDate": "2024-12-01",
+      "url": ""
+    }
+  ],
+  "conference_presentations": [
+    {
+      "title": "Human-in-the-Loop Heteroscedastic Multi-Objective Bayesian Optimization for Gait and Squat Controller Tuning",
+      "event": "Midwest Robotics",
+      "location": "Chicago, IL",
+      "date": "2025-01-01"
+    },
+    {
+      "title": "Efficient Optimization of Control Strategies for Hip-Centric Tasks",
+      "event": "Midwest Robotics",
+      "location": "Chicago, IL",
+      "date": "2024-01-01"
+    },
+    {
+      "title": "A Hip Emulating Research Orthotic to Reduce Swinging Leg Muscle Activity Using Custom Torque Profiles",
+      "event": "Dynamic Walking",
+      "location": "Madison, WI",
+      "date": "2022-01-01"
     }
   ]
 }

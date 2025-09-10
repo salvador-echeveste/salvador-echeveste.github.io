@@ -476,11 +476,11 @@ ninja.data = [{
           window.open("mailto:%73%65%63%68%65%76%36@%75%69%63.%65%64%75", "_blank");
         },
       },{
-        id: 'social-inspire',
-        title: 'Inspire HEP',
+        id: 'social-linkedin',
+        title: 'LinkedIn',
         section: 'Socials',
         handler: () => {
-          window.open("https://inspirehep.net/authors/1010907", "_blank");
+          window.open("https://www.linkedin.com/in/salvador-echeveste-917a33368", "_blank");
         },
       },{
         id: 'social-rss',

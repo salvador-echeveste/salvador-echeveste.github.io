@@ -24,13 +24,14 @@ scrollable: false # adds a vertical scroll bar if there are more than 3 new post
 limit: 0 # leave blank to include all the blog posts
 ---
 
-I am a recent PhD graduate from the University of Illinois at Chicago with over 5 years of experience developing probabilistic machine learning models for complex, noisy time-series data. My research has focused on the intersection of machine learning, signal processing, and control systems, with particular expertise in Bayesian optimization for human-in-the-loop applications.
-During my doctoral work, I developed heteroscedastic Gaussian Process models that achieved 23-31% RMSE reduction compared to traditional approaches, while accelerating convergence by 10× in real-world exoskeleton control applications. My work with high-frequency EMG signals (1.7kHz) and large-scale datasets (4GB+) has equipped me with robust skills in real-time signal processing, uncertainty quantification, and multi-objective optimization.
+I am a recent PhD graduate from the University of Illinois at Chicago specializing in multi-objective optimization and control systems for wearable robotics. My research bridges machine learning, biomechatronics, and human-computer interaction, with over 5 years developing and deploying real-time optimization algorithms for assistive devices.
+During my doctoral work, I designed and built bilateral hip exoskeletons using quasi-direct drive actuation, developing variable impedance controllers that reduced users' metabolic cost by up to 17.2% and muscle activity (EMG) by 18.2% compared to unassisted movement. My key innovation was implementing a multi-objective Bayesian optimization framework that simultaneously optimized physiological efficiency and user comfort, achieving personalized controller tuning in under 12 minutes—a 10× improvement over traditional methods requiring 2-4 hours.
 Key technical achievements include:
 
-Designed and deployed Bayesian optimization frameworks that reduced human metabolic cost by 17.2% in 11-subject clinical studies
-Developed real-time EMG signal enhancement algorithms achieving +108.7% performance improvement with sub-millisecond latency
-Built predictive ML models using elastic net and advanced feature engineering, improving controller selection accuracy to 75%
+Developed heteroscedastic Gaussian Process models capturing input-dependent noise in human responses, improving prediction accuracy by 23-31% over homoscedastic approaches
+Built real-time control systems operating at 100Hz on embedded hardware (Raspberry Pi), implementing variable stiffness profiles using Bézier curves for smooth torque modulation
+Processed high-frequency EMG signals (1.77kHz) with custom pipelines achieving 18.3dB SNR improvement while maintaining <10ms latency
+Conducted 11-subject clinical studies demonstrating significant reductions in perceived exertion (34.8% for walking, 23.2% for squatting)
 
-I am seeking challenging opportunities in machine learning where I can apply my expertise in probabilistic modeling, optimization, and signal processing to create value through data-driven solutions. I am particularly interested in roles that involve tackling complex, high-impact problems requiring rigorous mathematical modeling and innovative algorithmic approaches.
-My interdisciplinary background uniquely positions me to bridge the gap between theoretical ML research and practical implementation, having successfully deployed algorithms on real hardware systems operating at 100Hz in demanding real-world conditions.
+My work revealed fundamental trade-offs between EMG minimization and user preference through Pareto front analysis, validating the necessity of multi-objective approaches in human-centered design. I employed Expected Hypervolume Improvement for efficient exploration without requiring a priori objective weighting.
+I am seeking challenging opportunities in machine learning and robotics where I can apply my expertise in probabilistic modeling, real-time optimization, and human-in-the-loop systems. My interdisciplinary background uniquely positions me to develop data-driven solutions for complex cyber-physical systems requiring both theoretical rigor and practical implementation.

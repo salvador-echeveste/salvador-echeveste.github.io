@@ -1,18 +1,24 @@
 ---
 layout: page
-title: EMG signal enhancement
+title: EMG Signal Enhancement
 description: Hankel-based Bayesian learning with multi-objective optimization for EMG denoising
-img: /assets/EMG_enhancement_icon.png
+img: /assets/img/EMG_enhancement_icon.jpg
 importance: 1
 category: work
 related_publications: true
-paper: /assets/img/EMG_Signal_Enhancement_via_Multi_Objective_Optimization_of_Hankel_Based_Bayesian_Learning.pdf
-overview: /assets/img/OVERVIEW3.pdf
+paper: /assets/pdf/EMG_Signal_Enhancement_IFAC.pdf
 github: https://github.com/salvador-echeveste/signal_enhancement
 ---
+
+## Project Overview
+
+Electromyography (EMG) signals are crucial for diagnosing neuromuscular conditions and controlling assistive devices, but they're plagued by noise that obscures clinically important features. We developed an automated framework that enhances EMG quality while preserving the subtle transient features that doctors and devices need to see.
+
+### Key Innovation
+Unlike traditional filters that force a trade-off between removing noise and keeping real signal content, our method **decouples these objectives** using multi-objective Bayesian optimization. The result: **108.7% improvement** in signal quality metrics while maintaining signal fidelity.
+
 <p>
   <a href="{{ page.github }}" target="_blank" rel="noopener" style="text-decoration:none;">
-    <!-- GitHub SVG icon -->
     <svg height="16" width="16" viewBox="0 0 16 16" aria-hidden="true" style="vertical-align: text-bottom; margin-right:6px;">
       <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
       0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52
@@ -25,44 +31,109 @@ github: https://github.com/salvador-echeveste/signal_enhancement
     View code on GitHub
   </a>
 </p>
-## Figures & downloads
 
-Below are the figures used in the manuscript. Click the captions to open the original PDF figure (all files assumed to live in `assets/img/`).
+## Technical Approach
 
+### The Pipeline
 <div class="row">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/OVERVIEW3.jpg" title="Overview: EMG enhancement & MOBO workflow (click caption to open PDF)" class="img-fluid rounded z-depth-1" %}
-    <div class="caption"><a href="/assets/img/OVERVIEW3.pdf" target="_blank">Figure: Overview — pipeline & optimization (OVERVIEW3.pdf)</a></div>
+    {% include figure.liquid path="assets/img/overview_hankel.jpg" title="EMG enhancement & MOBO workflow" class="img-fluid rounded z-depth-1" %}
+    <div class="caption">Complete signal enhancement pipeline with multi-objective optimization</div>
   </div>
 </div>
 
+Our framework combines four key components:
+1. **Hankel Matrix Decomposition** - Embeds time-series data to separate signal from noise
+2. **Bayesian Koopman Regression** - Learns underlying dynamics with uncertainty quantification
+3. **Weighted Signal Fusion** - Optimally combines reconstructed and predicted signals
+4. **Makima Median Smoothing** - Final refinement preserving transient features
+
+### Signal Processing Stages
 <div class="row">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/SIGNAL2.jpg" title="Processing stages for one EMG channel (click caption to open PDF)" class="img-fluid rounded z-depth-1" %}
-    <div class="caption"><a href="/assets/img/SIGNAL2.pdf" target="_blank">Figure: Processing stages / smoother (SIGNAL2.pdf)</a></div>
+    {% include figure.liquid path="assets/img/signal_hankel.jpg" title="Processing stages for one EMG channel" class="img-fluid rounded z-depth-1" %}
+    <div class="caption">Signal transformation through each processing stage</div>
   </div>
 </div>
 
-<div class="row">
-  <div class="col-sm-6 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/CORR.jpg" title="Correlation SNR vs SSIM (click caption to open PDF)" class="img-fluid rounded z-depth-1" %}
-    <div class="caption"><a href="/assets/img/CORR.pdf" target="_blank">Figure: Correlation scatter (CORR.pdf)</a></div>
-  </div>
-  <div class="col-sm-6 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/RES_ALL.jpg" title="Overall SGM & joint metric comparison (click caption to open PDF)" class="img-fluid rounded z-depth-1" %}
-    <div class="caption"><a href="/assets/img/RES_ALL.pdf" target="_blank">Figure: All-subject comparison (RES_ALL.pdf)</a></div>
-  </div>
-</div>
+## Key Results
+
+### Breaking the Trade-off
+Traditional EMG processing forces you to choose: remove noise OR preserve signal features. Our method achieves both:
 
 <div class="row">
   <div class="col-sm-6 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/RES_MUS.jpg" title="Muscle-specific results (click caption to open PDF)" class="img-fluid rounded z-depth-1" %}
-    <div class="caption"><a href="/assets/img/RES_MUS.pdf" target="_blank">Figure: Muscle-specific results (RES_MUS.pdf)</a></div>
+    {% include figure.liquid path="assets/img/correlation_hankel.jpg" title="Correlation SNR vs SSIM" class="img-fluid rounded z-depth-1" %}
+    <div class="caption"><b>Decoupled objectives:</b> Traditional methods (gray) show strong negative correlation (r=-0.64) between noise reduction and signal fidelity. Our method (blue) breaks this trade-off (r≈0).</div>
   </div>
   <div class="col-sm-6 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/RES_ACT.jpg" title="Activity-specific results (click caption to open PDF)" class="img-fluid rounded z-depth-1" %}
-    <div class="caption"><a href="/assets/img/RES_ACT.pdf" target="_blank">Figure: Activity-specific results (RES_ACT.pdf)</a></div>
+    {% include figure.liquid path="assets/img/results_all_hankel.jpg" title="Overall performance comparison" class="img-fluid rounded z-depth-1" %}
+    <div class="caption"><b>Superior performance:</b> 108.7% improvement in combined metrics (p=0.028) and 11.4% gain in normalized joint fidelity (p=0.001)</div>
   </div>
 </div>
+
+### Activity-Specific Performance
+<div class="row">
+  <div class="col-sm-6 mt-3 mt-md-0">
+    {% include figure.liquid path="assets/img/results_activity_hankel.jpg" title="Activity-specific results" class="img-fluid rounded z-depth-1" %}
+    <div class="caption">Performance gains for walking (56.8%) and squatting (157.9%) activities</div>
+  </div>
+  <div class="col-sm-6 mt-3 mt-md-0">
+    {% include figure.liquid path="assets/img/results_muscle_hankel.jpg" title="Muscle-specific results" class="img-fluid rounded z-depth-1" %}
+    <div class="caption">Muscle-specific improvements across four major muscle groups</div>
+  </div>
+</div>
+
+## Why This Matters
+
+### Clinical Impact
+- **Better Diagnosis:** Cleaner signals help doctors identify neuromuscular conditions more accurately
+- **Improved Prosthetics:** Enhanced EMG enables more precise control of assistive devices
+- **Real-time Processing:** Automated parameter tuning eliminates manual trial-and-error
+
+### Technical Innovation
+- **Multi-objective Optimization:** First application of MOBO to EMG enhancement
+- **Interpretable Framework:** Unlike black-box deep learning, our method is fully explainable
+- **Automated Tuning:** No manual parameter selection needed
+
+## Implementation Details
+
+### Parameter Space
+The framework optimizes 5 key parameters automatically:
+- Embedding dimension (d): 50-150
+- SVD rank (r): 3-10  
+- Regularization variances (σ², τ²)
+- Fusion weight (w): 0-1
+
+### Optimization Strategy
+- **Gaussian Process Surrogates** model objective functions
+- **Expected Hypervolume Improvement** guides exploration
+- **Pareto Front** extraction preserves all optimal trade-offs
+
+## Dataset & Validation
+
+Tested on 10 healthy adults performing:
+- Level-ground walking
+- Bodyweight squatting
+- 4 muscle groups: Rectus Femoris, Biceps Femoris, Gastrocnemius, Gluteus Maximus
+- 2 kHz sampling rate with SENIAM electrode placement
+
+## Publications & Resources
+
+📄 [Full Paper (PDF)](/assets/pdf/Echeveste(2025)EMG_Signal_enhancement_via_Hankelbased_bayesian_learning.pdf)
+
+📊 [Code & Implementation]({{ page.github }})
+
+📐 [Mathematical Details](#technical-approach)
+
+## Team
+
+**Lead Researcher:** Salvador Echeveste  
+**Co-authors:** Chunming Yang, Pranav A. Bhounsule  
+**Institution:** University of Illinois at Chicago  
+**Department:** Mechanical and Industrial Engineering  
+**Contact:** sechev6@uic.edu
 
 ---
+
+*This work advances the state-of-the-art in biomedical signal processing, with applications in rehabilitation engineering, clinical diagnostics, and human-machine interfaces.*

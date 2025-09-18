@@ -424,7 +424,7 @@ ninja.data = [{
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
           section: "News",},{id: "projects-emg-signal-enhancement",
-          title: 'EMG signal enhancement',
+          title: 'EMG Signal Enhancement',
           description: "Hankel-based Bayesian learning with multi-objective optimization for EMG denoising",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";

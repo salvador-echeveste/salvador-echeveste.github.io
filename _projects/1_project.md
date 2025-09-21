@@ -2,11 +2,11 @@
 layout: page
 title: EMG Signal Enhancement
 description: Hankel-based Bayesian learning with multi-objective optimization for EMG denoising
-img: /assets/img/EMG_enhancement_icon.jpg
+img: /assets/img/EMG_enhancement_icon.png
 importance: 1
 category: work
 related_publications: true
-paper: /assets/pdf/EMG_Signal_Enhancement_IFAC.pdf
+paper: /assets/pdf/Echeveste(2025)EMG_Signal_enhancement_via_Hankelbased_bayesian_learning.pdf
 github: https://github.com/salvador-echeveste/signal_enhancement
 ---
 
@@ -37,7 +37,7 @@ Unlike traditional filters that force a trade-off between removing noise and kee
 ### The Pipeline
 <div class="row">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/overview_hankel.jpg" title="EMG enhancement & MOBO workflow" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid path="assets/img/overview_hankel.png" title="EMG enhancement & MOBO workflow" class="img-fluid rounded z-depth-1" %}
     <div class="caption">Complete signal enhancement pipeline with multi-objective optimization</div>
   </div>
 </div>
@@ -51,7 +51,7 @@ Our framework combines four key components:
 ### Signal Processing Stages
 <div class="row">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/signal_hankel.jpg" title="Processing stages for one EMG channel" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid path="assets/img/signal_hankel.png" title="Processing stages for one EMG channel" class="img-fluid rounded z-depth-1" %}
     <div class="caption">Signal transformation through each processing stage</div>
   </div>
 </div>
@@ -63,11 +63,11 @@ Traditional EMG processing forces you to choose: remove noise OR preserve signal
 
 <div class="row">
   <div class="col-sm-6 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/correlation_hankel.jpg" title="Correlation SNR vs SSIM" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid path="assets/img/correlation_hankel.png" title="Correlation SNR vs SSIM" class="img-fluid rounded z-depth-1" %}
     <div class="caption"><b>Decoupled objectives:</b> Traditional methods (gray) show strong negative correlation (r=-0.64) between noise reduction and signal fidelity. Our method (blue) breaks this trade-off (r≈0).</div>
   </div>
   <div class="col-sm-6 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/results_all_hankel.jpg" title="Overall performance comparison" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid path="assets/img/results_all_hankel.png" title="Overall performance comparison" class="img-fluid rounded z-depth-1" %}
     <div class="caption"><b>Superior performance:</b> 108.7% improvement in combined metrics (p=0.028) and 11.4% gain in normalized joint fidelity (p=0.001)</div>
   </div>
 </div>
@@ -75,11 +75,11 @@ Traditional EMG processing forces you to choose: remove noise OR preserve signal
 ### Activity-Specific Performance
 <div class="row">
   <div class="col-sm-6 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/results_activity_hankel.jpg" title="Activity-specific results" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid path="assets/img/10.jpg" title="Activity-specific results" class="img-fluid rounded z-depth-1" %}
     <div class="caption">Performance gains for walking (56.8%) and squatting (157.9%) activities</div>
   </div>
   <div class="col-sm-6 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/results_muscle_hankel.jpg" title="Muscle-specific results" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid path="assets/img/11.jpg" title="Muscle-specific results" class="img-fluid rounded z-depth-1" %}
     <div class="caption">Muscle-specific improvements across four major muscle groups</div>
   </div>
 </div>
@@ -120,7 +120,7 @@ Tested on 10 healthy adults performing:
 
 ## Publications & Resources
 
-📄 [Full Paper (PDF)](/assets/pdf/Echeveste(2025)EMG_Signal_enhancement_via_Hankelbased_bayesian_learning.pdf)
+📄 [Full Paper (PDF)]({{ page.paper }})
 
 📊 [Code & Implementation]({{ page.github }})
 

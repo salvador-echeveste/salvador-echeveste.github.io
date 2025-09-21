@@ -72,17 +72,6 @@ Traditional EMG processing forces you to choose: remove noise OR preserve signal
   </div>
 </div>
 
-### Activity-Specific Performance
-<div class="row">
-  <div class="col-sm-6 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/10.jpg" title="Activity-specific results" class="img-fluid rounded z-depth-1" %}
-    <div class="caption">Performance gains for walking (56.8%) and squatting (157.9%) activities</div>
-  </div>
-  <div class="col-sm-6 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="Muscle-specific results" class="img-fluid rounded z-depth-1" %}
-    <div class="caption">Muscle-specific improvements across four major muscle groups</div>
-  </div>
-</div>
 
 ## Why This Matters
 
